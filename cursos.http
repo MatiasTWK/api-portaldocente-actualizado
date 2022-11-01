@@ -1,0 +1,35 @@
+###
+
+//AÑADIR CURSO
+POST http://localhost:9000/api/cursos HTTP/1.1
+Content-Type: application/json
+
+{
+    "curso" : "Vespertino"
+}
+
+
+###
+
+//OBTENER CURSO
+GET http://localhost:9000/api/cursos HTTP/1.1
+
+###
+
+//ENCONTRAR CURSO POR ID (Colocar la id despues de /cursos ej : http://localhost:9000/api/usuarios/(id))
+GET http://localhost:9000/api/cursos   HTTP/1.1
+
+###
+
+//ACTUALIZAR LOS CURSOS (Colocar la id despues de /cursos ej : http://localhost:9000/api/cursos/(id)
+PUT  http://localhost:9000/api/cursos  HTTP/1.1
+Content-Type: application/json
+
+{
+    "curso":""
+}
+
+###
+
+//ELIMINAR CURSOS (Colocar la id despues de /cursos ej: http://localhost:9000/api/cursos/(id)
+DELETE http://localhost:9000/api/cursos HTTP/1.1
